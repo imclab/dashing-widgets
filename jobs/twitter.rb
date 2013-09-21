@@ -10,7 +10,7 @@ Twitter.configure do |config|
   config.oauth_token_secret = 'YOUR_OAUTH_SECRET'
 end
 
-search_term = URI::encode('#todayilearned')
+search_term = URI::encode('@PHLairport')
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
